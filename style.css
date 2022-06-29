@@ -8,23 +8,31 @@
   padding-bottom: 50px;
 }
 
-.contenedor_inicio {
-  display: flex;
-  align-items: center;
-}
-
-.texto_inicio {
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-  width: 800px;
-  height: 250px;
-}
-
 .main_inicio {
   display: flex;
   flex-direction: row;
   align-items: center;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
   background-image: radial-gradient(#d92858 0.5px, transparent 0.5px), radial-gradient(#d92858 0.5px, #e5e5f7 0.5px);
+}
+.main_inicio .contenedor_inicio {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.main_inicio .contenedor_inicio .texto_inicio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0px 50px 0px 0px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  width: 800px;
+  height: 250px;
+}
+.main_inicio .contenedor_inicio .texto_inicio .logo {
+  filter: contrast(110%) brightness(100%) saturate(180%);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
 }
 
 .footer_inicio {
@@ -34,38 +42,9 @@
   padding-top: 60px;
 }
 
-.texto_inicio {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 0px 50px 0px 0px;
-}
-
-.logo {
-  filter: contrast(110%) brightness(100%) saturate(180%);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-  border-radius: 50%;
-}
-
 /* estilo Sobre Noe Moni*/
 .contenedor_fluid_sobre {
   padding-bottom: 50px;
-}
-
-.contenedor_texto_sobre {
-  display: flex;
-  align-items: center;
-  padding-bottom: 50px;
-  gap: 250px;
-}
-
-.img_redonda {
-  width: 500px;
-  height: 350px;
-  border-radius: 250px;
-  border: solid 0.5px white;
-  filter: brightness(100%) contrast(100%) saturate(150%);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 }
 
 .main_sobre {
@@ -76,15 +55,27 @@
   background-image: radial-gradient(#d92858 0.5px, transparent 0.5px), radial-gradient(#d92858 0.5px, #e5e5f7 0.5px);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 }
-
-.text_sobre {
+.main_sobre .contenedor_texto_sobre {
+  display: flex;
+  align-items: center;
+  padding-bottom: 50px;
+  gap: 250px;
+}
+.main_sobre .contenedor_texto_sobre .text_sobre {
   background-image: radial-gradient(#d92858 0.5px, transparent 0.5px), radial-gradient(#d92858 0.5px, #e5e5f7 0.5px);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 }
-
-.foto__sobre {
-  width: 400px;
+.main_sobre .contenedor_texto_sobre .text_sobre .foto__sobre {
+  width: 600px;
   height: 400px;
+}
+.main_sobre .contenedor_texto_sobre .text_sobre .foto__sobre .img_redonda {
+  width: 500px;
+  height: 350px;
+  border-radius: 50%;
+  border: solid 0.5px white;
+  filter: brightness(100%) contrast(100%) saturate(150%);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 }
 
 .footer_sobre {
@@ -94,14 +85,44 @@
   padding-top: 60px;
 }
 
-.conten_curs_reg_fluid {
+/*Estilos Clases Regulares*/
+/*
+.conten_curs_reg_fluid1 {
+    background-image: radial-gradient(#d92858 0.5px, transparent 0.5px), radial-gradient(#d92858 0.5px, #e5e5f7 0.5px);
+    padding-top: 70px;
+}
+*/
+.curs_reg {
+  background-image: radial-gradient(#d92858 0.5px, transparent 0.5px), radial-gradient(#d92858 0.5px, #e5e5f7 0.5px);
+  padding-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+.curs_reg .conten_curs_reg_fluid {
   background-image: radial-gradient(#d92858 0.5px, transparent 0.5px), radial-gradient(#d92858 0.5px, #e5e5f7 0.5px);
   padding-top: 50px;
 }
-
-.conten_curs_reg_fluid1 {
+.curs_reg .conten_curs_reg_fluid .curso_kids {
+  width: 350px;
   background-image: radial-gradient(#d92858 0.5px, transparent 0.5px), radial-gradient(#d92858 0.5px, #e5e5f7 0.5px);
-  padding-top: 70px;
+  background-size: 20px 20px;
+}
+.curs_reg .conten_curs_reg_fluid .curso_kids .card-body {
+  background-image: radial-gradient(#d92858 0.5px, transparent 0.5px), radial-gradient(#d92858 0.5px, #e5e5f7 0.5px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 25px;
+}
+.curs_reg .conten_curs_reg_fluid .curso_kids .card-body .curso_juniors {
+  width: 350px;
+  background-image: radial-gradient(#d92858 0.5px, transparent 0.5px), radial-gradient(#d92858 0.5px, #e5e5f7 0.5px);
+  background-size: 20px 20px;
+}
+.curs_reg .conten_curs_reg_fluid .curso_kids .card-body .curso_juniors .card-body {
+  background-image: radial-gradient(#d92858 0.5px, transparent 0.5px), radial-gradient(#d92858 0.5px, #e5e5f7 0.5px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 25px;
 }
 
 .curs_reg {
@@ -112,11 +133,29 @@
   align-items: center;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 }
-
-.curso_kids {
+.curs_reg .conten_curs_reg_fluid1 {
+  background-image: radial-gradient(#d92858 0.5px, transparent 0.5px), radial-gradient(#d92858 0.5px, #e5e5f7 0.5px);
+  padding-top: 70px;
+}
+.curs_reg .conten_curs_reg_fluid1 .curso_adolescents {
   width: 350px;
   background-image: radial-gradient(#d92858 0.5px, transparent 0.5px), radial-gradient(#d92858 0.5px, #e5e5f7 0.5px);
   background-size: 20px 20px;
+}
+.curs_reg .conten_curs_reg_fluid1 .curso_adolescents .card-body {
+  background-image: radial-gradient(#d92858 0.5px, transparent 0.5px), radial-gradient(#d92858 0.5px, #e5e5f7 0.5px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 25px;
+}
+.curs_reg .conten_curs_reg_fluid1 .curso_adolescents .card-body .curso_adults {
+  width: 350px;
+  background-image: radial-gradient(#d92858 0.5px, transparent 0.5px), radial-gradient(#d92858 0.5px, #e5e5f7 0.5px);
+  background-size: 20px 20px;
+}
+.curs_reg .conten_curs_reg_fluid1 .curso_adolescents .card-body .curso_adults .card-body {
+  background-image: radial-gradient(#d92858 0.5px, transparent 0.5px), radial-gradient(#d92858 0.5px, #e5e5f7 0.5px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 25px;
 }
 
 .curso_juniors {
@@ -137,23 +176,15 @@
   background-size: 20px 20px;
 }
 
-.card-body {
-  background-image: radial-gradient(#d92858 0.5px, transparent 0.5px), radial-gradient(#d92858 0.5px, #e5e5f7 0.5px);
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
-  border-radius: 25px;
-}
-
-.footer_cursos_reg {
-  padding-top: 50px;
-}
-
 .footer_cursos_reg {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  padding-top: 50px;
 }
 
+/*Estilos Galeria*/
 .contenedor_carrusel {
   width: 650px;
 }
@@ -289,164 +320,39 @@
   align-items: center;
 }
 
-@media screen and (max-width: 600px) {
-  .body_inicio {
-    display: grid;
-    grid-template-rows: auto auto auto;
-    grid-template-columns: auto;
-    width: 100%;
+@media screen and (max-width: 850px) {
+  * {
+    margin: 0;
+    padding: 0;
   }
 
-  /*
-       .header-inicio{
-              grid-column: 1/4;
-          }
-       .article-inicio{
-               grid-column: 1/4;
-          }
-       .footer-inicio{
-              grid-column: 1/4;
-          }
-      .header-inicio{
-          display: flex;
-          justify-content: space-around;
-          align-items: center;
-
-      }*/
-  .main_inicio {
-    padding-top: 500px;
+  .contenedor_inicio {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
     height: 1000px;
   }
 
-  p {
-    width: 400px;
-  }
-
   .texto_inicio {
-    float: right;
-    width: 550px;
-  }
-
-  .article_inicio1 {
-    padding-top: 75px;
-    padding-left: 15px;
-  }
-
-  .texto_inicio {
-    grid-row: 1/3;
-    grid-column: 1/3;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-    padding-right: 30px;
+    width: 400px;
+    height: 350px;
   }
 
-  .logo_inicio {
-    grid-column: 1/2;
-    grid-row: 1/2;
-    padding-right: 15px;
-    padding-bottom: 190px;
+  .main_inicio {
+    display: flex;
+    flex-direction: column-reverse;
+    height: 1100px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    background-image: radial-gradient(#d92858 0.5px, transparent 0.5px), radial-gradient(#d92858 0.5px, #e5e5f7 0.5px);
   }
 
   .logo {
     filter: contrast(110%) brightness(100%) saturate(180%);
-    width: 520px;
-    height: 520px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
     border-radius: 50%;
   }
 
-  .body_sobre {
-    display: grid;
-    grid-template-rows: auto auto auto;
-    grid-template-columns: auto;
-    width: 100%;
-  }
-
-  .header_sobre {
-    grid-column: 1/2;
-    grid-row: 1/2;
-  }
-
-  .footer_sobre {
-    padding-right: 150px;
-  }
-
-  .main_sobre {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 33% 33% 33%;
-    row-gap: 50px;
-    padding-left: 80px;
-    padding-right: 200px;
-    height: 1000px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-  }
-
-  .foto_sobre {
-    display: flex;
-    width: 350px;
-    grid-row: 1/2;
-  }
-
-  .img_redonda {
-    width: 250px;
-    height: 300px;
-  }
-
-  .contenedor_texto_sobre {
-    grid-row: 2/3;
-    padding-top: 180px;
-    width: 500px;
-    height: 650px;
-  }
-
-  .contenedor_text_sobre {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    width: 450px;
-    height: 550px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-    padding-right: 100px;
-    padding-bottom: 100px;
-    grid-row: 2/3;
-  }
-
-  .texto_sobre {
-    width: 380px;
-    grid-row: 1/3;
-    grid-column: 1/3;
-    padding-top: 50px;
-  }
-
-  /*
-
-      .container-fluid-reg {
-          display: flex;
-          flex-direction: row;
-          align-items: center;
-          padding-right: 50px;
-          padding-top: 10px;
-
-
-
-      }
-
-
-
-      .navbar-toggler-reg {
-          display: flex;
-          flex-direction: row-reverse;
-          width: 56px;
-          height: 40px;
-          margin-right: -100px;
-
-      }
-  /*
-      .hamburguesa_reg {
-          padding-left: 350px;
-         padding-top: 10px;
-      }
-  */
   .curs_reg {
     padding-left: 100px;
   }
