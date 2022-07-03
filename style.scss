@@ -1,6 +1,13 @@
 @import url('https://fonts.googleapis.com/css2? family= Montserrat:ital,wght@0,400;0,700;1,300 & family= Oswald:wght@300 & family= Roboto:ital,wght@ 1,300;1,400;1,700 & mostrar=intercambiar');
 
 @import"colores";
+$sombra-caja: 0 5px 15px rgba(0, 0, 0, 0.5);
+
+$estilos:(
+    AnchoCard:350px, tFuente:18px, BordeRedondo:25px,
+);
+
+
 
 * {
     margin: 0;
@@ -8,9 +15,18 @@
 
 }
 
+@mixin encabezado {
+        font-style: oblique;
+        color: #d92858;
+        background-image:radial-gradient(#d92858 0.5px, transparent 0.5px), radial-gradient(#d92858 0.5px, #e5e5f7 0.5px); 
+        height: 80px;
+        
+        
+}
 
-
-
+.encabezado{
+    @include encabezado;
+}
 
 .contenedor_fluid_inicio {
     padding-bottom: 50px;
@@ -22,7 +38,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    box-shadow: $sombra-caja;
     background-image: $ColorPrimario;
 
     .contenedor_inicio {
@@ -36,14 +52,15 @@
             flex-direction: column;
             align-items: center;
             margin: 0px 50px 0px 0px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+            box-shadow: $sombra-caja;
+            font-size: 18px;
             width: 800px;
             height: 250px;
 
 
             .logo {
                 filter: contrast(110%) brightness(100%) saturate(180%);
-                box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+                box-shadow: $sombra-caja;
                 border-radius: 50%;
             }
 
@@ -82,9 +99,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
     background-image: $ColorPrimario;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    box-shadow: $sombra-caja;
 
     .contenedor_texto_sobre {
         display: flex;
@@ -95,7 +111,8 @@
 
         .text_sobre {
             background-image:$ColorPrimario;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+            box-shadow: $sombra-caja;
+            font-size: 18px;
 
             .foto__sobre {
                 width: 600px;
@@ -107,7 +124,7 @@
                     border-radius: 50%;
                     border: solid 0.5px white;
                     filter: brightness(100%) contrast(100%) saturate(150%);
-                    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+                    box-shadow: $sombra-caja;
                 }
 
 
@@ -133,12 +150,7 @@
 
 /*Estilos Clases Regulares*/
 
-/*
-.conten_curs_reg_fluid1 {
-    background-image: radial-gradient(#d92858 0.5px, transparent 0.5px), radial-gradient(#d92858 0.5px, #e5e5f7 0.5px);
-    padding-top: 70px;
-}
-*/
+
 
 
 .curs_reg {
@@ -147,7 +159,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    box-shadow: 0 5px 15px rgb(0 0 0 / 50%);
+    box-shadow: $sombra-caja;
 
 
     .conten_curs_reg_fluid {
@@ -157,27 +169,29 @@
 
 
         .curso_kids {
-            width: 350px;
+            width: map-get($estilos,AnchoCard );
             background-image:$ColorPrimario;
-            background-size: 20px 20px;
+            
 
 
             .card-body {
-                background-image:$ColorPrimario ;
-                box-shadow: 0 5px 10px rgb(0 0 0 / 30%);
-                border-radius: 25px;
-
-
+                background-image: $ColorPrimario;
+                box-shadow: $sombra-caja;
+                border-radius:map-get($map: $estilos, $key:BordeRedondo );
+                font-size: map-get($map: $estilos, $key:tFuente );
+                
                 .curso_juniors {
-                    width: 350px;
+                    width:map-get($estilos,AnchoCard);
                     background-image:$ColorPrimario;
-                    background-size: 20px 20px;
+                    
 
 
                     .card-body {
                         background-image: $ColorPrimario;
-                        box-shadow: 0 5px 10px rgb(0 0 0 / 30%);
-                        border-radius: 25px;
+                        box-shadow: $sombra-caja;
+                        border-radius:map-get($map: $estilos, $key:BordeRedondo );
+                        font-size: map-get($map: $estilos, $key:tFuente );
+                        
                     }
                 }
 
@@ -196,7 +210,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    box-shadow: 0 5px 15px rgb(0 0 0 / 50%);
+    box-shadow: $sombra-caja;
 
 
     .conten_curs_reg_fluid1 {
@@ -205,30 +219,25 @@
 
 
         .curso_adolescents {
-            width: 350px;
+            width: map-get($map: $estilos, $key:AnchoCard );
             background-image: $ColorPrimario;
-            background-size: 20px 20px;
-
+           
 
             .card-body {
                 background-image: $ColorPrimario;
-                box-shadow: 0 5px 10px rgb(0 0 0 / 30%);
-                border-radius: 25px;
+                box-shadow: $sombra-caja;
+                border-radius: map-get($estilos, BordeRedondo );
+                font-size: map-get($estilos, tFuente);
 
 
 
 
                 .curso_adults {
-                    width: 350px;
-                    background-image:$ColorPrimario;
-                    background-size: 20px 20px;
+                   @extend .curso_adolescents;
 
 
                     .card-body {
-                        background-image: $ColorPrimario;
-                        box-shadow: 0 5px 10px rgb(0 0 0 / 30%);
-                        border-radius: 25px;
-
+                        @extend .card-body;
                     }
 
                 }
@@ -288,20 +297,22 @@
 .color_galer {
     background-image: radial-gradient(#d92858 0.5px, transparent 0.5px), radial-gradient(#d92858 0.5px, #e5e5f7 0.5px);
     color: #d92858;
-    border-radius: 40%;
-    box-shadow: 0 5px 10px rgb(0 0 0 / 30%);
+    border-radius: 50%;
+    box-shadow: $sombra-caja;
 }
 
 .carrusel_galer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-radius: 50%;
-    filter: brightness(100%) contrast(200%) sepia(20%);
-    box-shadow: 0 5px 10px rgb(0 0 0 / 30%);
+    filter: brightness(100%) contrast(100%);
+    box-shadow: $sombra-caja;
 
 }
-
+.carousel-inner{
+    border-radius: 50%;
+    box-shadow: $sombra-caja;
+}
 .footer_galeria {
     display: flex;
     flex-direction: row;
@@ -309,10 +320,10 @@
     align-items: center;
 }
 
+/*Estilos Contactos*/
 .main_contactos {
-
     background-image: radial-gradient(#d92858 0.5px, transparent 0.5px), radial-gradient(#d92858 0.5px, #e5e5f7 0.5px);
-    box-shadow: 0 5px 15px rgb(0 0 0 / 50%);
+    box-shadow: $sombra-caja;
 }
 
 
@@ -325,7 +336,7 @@
     margin: auto;
     padding: 4.5em;
     border-radius: 10px;
-    box-shadow: 0 5px 10px rgb(0 0 0 / 30%);
+    box-shadow: $sombra-caja;
     text-align: center;
 }
 
@@ -414,7 +425,7 @@
 
 
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 650px) {
 
 
     * {
@@ -433,7 +444,7 @@
     }
 
     .texto_inicio {
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+        box-shadow: $sombra-caja;
         width: 400px;
         height: 350px;
 
@@ -454,7 +465,7 @@
 
     .logo {
         filter: contrast(110%) brightness(100%) saturate(180%);
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+        box-shadow: $sombra-caja;
         border-radius: 50%;
     }
 

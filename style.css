@@ -4,6 +4,13 @@
   padding: 0;
 }
 
+.encabezado {
+  font-style: oblique;
+  color: #d92858;
+  background-image: radial-gradient(#d92858 0.5px, transparent 0.5px), radial-gradient(#d92858 0.5px, #e5e5f7 0.5px);
+  height: 80px;
+}
+
 .contenedor_fluid_inicio {
   padding-bottom: 50px;
 }
@@ -26,6 +33,7 @@
   align-items: center;
   margin: 0px 50px 0px 0px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  font-size: 18px;
   width: 800px;
   height: 250px;
 }
@@ -51,7 +59,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
   background-image: radial-gradient(#d92858 0.5px, transparent 0.5px), radial-gradient(#d92858 0.5px, #e5e5f7 0.5px);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 }
@@ -64,6 +71,7 @@
 .main_sobre .contenedor_texto_sobre .text_sobre {
   background-image: radial-gradient(#d92858 0.5px, transparent 0.5px), radial-gradient(#d92858 0.5px, #e5e5f7 0.5px);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  font-size: 18px;
 }
 .main_sobre .contenedor_texto_sobre .text_sobre .foto__sobre {
   width: 600px;
@@ -86,12 +94,6 @@
 }
 
 /*Estilos Clases Regulares*/
-/*
-.conten_curs_reg_fluid1 {
-    background-image: radial-gradient(#d92858 0.5px, transparent 0.5px), radial-gradient(#d92858 0.5px, #e5e5f7 0.5px);
-    padding-top: 70px;
-}
-*/
 .curs_reg {
   background-image: radial-gradient(#d92858 0.5px, transparent 0.5px), radial-gradient(#d92858 0.5px, #e5e5f7 0.5px);
   padding-bottom: 100px;
@@ -107,22 +109,22 @@
 .curs_reg .conten_curs_reg_fluid .curso_kids {
   width: 350px;
   background-image: radial-gradient(#d92858 0.5px, transparent 0.5px), radial-gradient(#d92858 0.5px, #e5e5f7 0.5px);
-  background-size: 20px 20px;
 }
-.curs_reg .conten_curs_reg_fluid .curso_kids .card-body {
+.curs_reg .conten_curs_reg_fluid .curso_kids .card-body, .curs_reg .conten_curs_reg_fluid .curso_kids .conten_curs_reg_fluid1 .curso_adolescents .card-body .curso_adults .card-body, .curs_reg .conten_curs_reg_fluid1 .curso_adolescents .card-body .curso_adults .conten_curs_reg_fluid .curso_kids .card-body {
   background-image: radial-gradient(#d92858 0.5px, transparent 0.5px), radial-gradient(#d92858 0.5px, #e5e5f7 0.5px);
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
   border-radius: 25px;
+  font-size: 18px;
 }
-.curs_reg .conten_curs_reg_fluid .curso_kids .card-body .curso_juniors {
+.curs_reg .conten_curs_reg_fluid .curso_kids .card-body .curso_juniors, .curs_reg .conten_curs_reg_fluid .curso_kids .conten_curs_reg_fluid1 .curso_adolescents .card-body .curso_adults .card-body .curso_juniors, .curs_reg .conten_curs_reg_fluid1 .curso_adolescents .card-body .curso_adults .conten_curs_reg_fluid .curso_kids .card-body .curso_juniors {
   width: 350px;
   background-image: radial-gradient(#d92858 0.5px, transparent 0.5px), radial-gradient(#d92858 0.5px, #e5e5f7 0.5px);
-  background-size: 20px 20px;
 }
 .curs_reg .conten_curs_reg_fluid .curso_kids .card-body .curso_juniors .card-body {
   background-image: radial-gradient(#d92858 0.5px, transparent 0.5px), radial-gradient(#d92858 0.5px, #e5e5f7 0.5px);
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
   border-radius: 25px;
+  font-size: 18px;
 }
 
 .curs_reg {
@@ -137,34 +139,23 @@
   background-image: radial-gradient(#d92858 0.5px, transparent 0.5px), radial-gradient(#d92858 0.5px, #e5e5f7 0.5px);
   padding-top: 70px;
 }
-.curs_reg .conten_curs_reg_fluid1 .curso_adolescents {
+.curs_reg .conten_curs_reg_fluid1 .curso_adolescents, .curs_reg .conten_curs_reg_fluid1 .curso_adolescents .card-body .curso_adults, .curs_reg .conten_curs_reg_fluid1 .curso_adolescents .card-body .curso_adults .card-body .curso_adults {
   width: 350px;
   background-image: radial-gradient(#d92858 0.5px, transparent 0.5px), radial-gradient(#d92858 0.5px, #e5e5f7 0.5px);
-  background-size: 20px 20px;
 }
-.curs_reg .conten_curs_reg_fluid1 .curso_adolescents .card-body {
+.curs_reg .conten_curs_reg_fluid1 .curso_adolescents .card-body, .curs_reg .conten_curs_reg_fluid1 .curso_adolescents .card-body .curso_adults .card-body {
   background-image: radial-gradient(#d92858 0.5px, transparent 0.5px), radial-gradient(#d92858 0.5px, #e5e5f7 0.5px);
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
   border-radius: 25px;
+  font-size: 18px;
 }
-.curs_reg .conten_curs_reg_fluid1 .curso_adolescents .card-body .curso_adults {
-  width: 350px;
-  background-image: radial-gradient(#d92858 0.5px, transparent 0.5px), radial-gradient(#d92858 0.5px, #e5e5f7 0.5px);
-  background-size: 20px 20px;
-}
-.curs_reg .conten_curs_reg_fluid1 .curso_adolescents .card-body .curso_adults .card-body {
-  background-image: radial-gradient(#d92858 0.5px, transparent 0.5px), radial-gradient(#d92858 0.5px, #e5e5f7 0.5px);
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
-  border-radius: 25px;
-}
-
 .curso_juniors {
   width: 350px;
   background-image: radial-gradient(#d92858 0.5px, transparent 0.5px), radial-gradient(#d92858 0.5px, #e5e5f7 0.5px);
   background-size: 20px 20px;
 }
 
-.curso_adolescents {
+.curso_adolescents, .curs_reg .conten_curs_reg_fluid1 .curso_adolescents .card-body .curso_adults, .curs_reg .conten_curs_reg_fluid1 .curso_adolescents .card-body .curso_adults .card-body .curso_adults {
   width: 350px;
   background-image: radial-gradient(#d92858 0.5px, transparent 0.5px), radial-gradient(#d92858 0.5px, #e5e5f7 0.5px);
   background-size: 20px 20px;
@@ -192,17 +183,21 @@
 .color_galer {
   background-image: radial-gradient(#d92858 0.5px, transparent 0.5px), radial-gradient(#d92858 0.5px, #e5e5f7 0.5px);
   color: #d92858;
-  border-radius: 40%;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 }
 
 .carrusel_galer {
   display: flex;
   flex-direction: column;
   align-items: center;
+  filter: brightness(100%) contrast(100%);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.carousel-inner {
   border-radius: 50%;
-  filter: brightness(100%) contrast(200%) sepia(20%);
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 }
 
 .footer_galeria {
@@ -212,6 +207,7 @@
   align-items: center;
 }
 
+/*Estilos Contactos*/
 .main_contactos {
   background-image: radial-gradient(#d92858 0.5px, transparent 0.5px), radial-gradient(#d92858 0.5px, #e5e5f7 0.5px);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
@@ -226,7 +222,7 @@
   margin: auto;
   padding: 4.5em;
   border-radius: 10px;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
   text-align: center;
 }
 
@@ -320,7 +316,7 @@
   align-items: center;
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 650px) {
   * {
     margin: 0;
     padding: 0;
@@ -371,7 +367,7 @@
     background-image: radial-gradient(#d92858 0.5px, transparent 0.5px), radial-gradient(#d92858 0.5px, #e5e5f7 0.5px);
   }
 
-  .curso_adolescents {
+  .curso_adolescents, .curs_reg .conten_curs_reg_fluid1 .curso_adolescents .card-body .curso_adults, .curs_reg .conten_curs_reg_fluid1 .curso_adolescents .card-body .curso_adults .card-body .curso_adults {
     width: 400px;
     background-image: radial-gradient(#d92858 0.5px, transparent 0.5px), radial-gradient(#d92858 0.5px, #e5e5f7 0.5px);
   }
