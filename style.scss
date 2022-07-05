@@ -3,8 +3,10 @@
 @import"colores";
 $sombra-caja: 0 5px 15px rgba(0, 0, 0, 0.5);
 
-$estilos:(
-    AnchoCard:350px, tFuente:18px, BordeRedondo:25px,
+$estilos: (
+    AnchoCard:350px,
+    tFuente:18px,
+    BordeRedondo:25px,
 );
 
 
@@ -16,15 +18,15 @@ $estilos:(
 }
 
 @mixin encabezado {
-        font-style: oblique;
-        color: #d92858;
-        background-image:radial-gradient(#d92858 0.5px, transparent 0.5px), radial-gradient(#d92858 0.5px, #e5e5f7 0.5px); 
-        height: 80px;
-        
-        
+    font-style: oblique;
+    color: #d92858;
+    background-image: radial-gradient(#d92858 0.5px, transparent 0.5px), radial-gradient(#d92858 0.5px, #e5e5f7 0.5px);
+    height: 80px;
+
+
 }
 
-.encabezado{
+.encabezado {
     @include encabezado;
 }
 
@@ -58,7 +60,7 @@ $estilos:(
             height: 250px;
 
 
-            .logo {
+            .logo_inicio {
                 filter: contrast(110%) brightness(100%) saturate(180%);
                 box-shadow: $sombra-caja;
                 border-radius: 50%;
@@ -110,7 +112,7 @@ $estilos:(
         gap: 250px;
 
         .text_sobre {
-            background-image:$ColorPrimario;
+            background-image: $ColorPrimario;
             box-shadow: $sombra-caja;
             font-size: 18px;
 
@@ -169,29 +171,29 @@ $estilos:(
 
 
         .curso_kids {
-            width: map-get($estilos,AnchoCard );
-            background-image:$ColorPrimario;
-            
+            width: map-get($estilos, AnchoCard);
+            background-image: $ColorPrimario;
+
 
 
             .card-body {
                 background-image: $ColorPrimario;
                 box-shadow: $sombra-caja;
-                border-radius:map-get($map: $estilos, $key:BordeRedondo );
-                font-size: map-get($map: $estilos, $key:tFuente );
-                
+                border-radius: map-get($map: $estilos, $key: BordeRedondo);
+                font-size: map-get($map: $estilos, $key: tFuente);
+
                 .curso_juniors {
-                    width:map-get($estilos,AnchoCard);
-                    background-image:$ColorPrimario;
-                    
+                    width: map-get($estilos, AnchoCard);
+                    background-image: $ColorPrimario;
+
 
 
                     .card-body {
                         background-image: $ColorPrimario;
                         box-shadow: $sombra-caja;
-                        border-radius:map-get($map: $estilos, $key:BordeRedondo );
-                        font-size: map-get($map: $estilos, $key:tFuente );
-                        
+                        border-radius: map-get($map: $estilos, $key: BordeRedondo);
+                        font-size: map-get($map: $estilos, $key: tFuente);
+
                     }
                 }
 
@@ -219,21 +221,21 @@ $estilos:(
 
 
         .curso_adolescents {
-            width: map-get($map: $estilos, $key:AnchoCard );
+            width: map-get($map: $estilos, $key: AnchoCard);
             background-image: $ColorPrimario;
-           
+
 
             .card-body {
                 background-image: $ColorPrimario;
                 box-shadow: $sombra-caja;
-                border-radius: map-get($estilos, BordeRedondo );
+                border-radius: map-get($estilos, BordeRedondo);
                 font-size: map-get($estilos, tFuente);
 
 
 
 
                 .curso_adults {
-                   @extend .curso_adolescents;
+                    @extend .curso_adolescents;
 
 
                     .card-body {
@@ -253,7 +255,7 @@ $estilos:(
 
 .curso_juniors {
     width: 350px;
-    background-image:$ColorPrimario;
+    background-image: $ColorPrimario;
     background-size: 20px 20px;
 
 
@@ -270,7 +272,7 @@ $estilos:(
 
 .curso_adults {
     width: 350px;
-    background-image:$ColorPrimario;
+    background-image: $ColorPrimario;
     background-size: 20px 20px;
 
 
@@ -309,10 +311,12 @@ $estilos:(
     box-shadow: $sombra-caja;
 
 }
-.carousel-inner{
+
+.carousel-inner {
     border-radius: 50%;
     box-shadow: $sombra-caja;
 }
+
 .footer_galeria {
     display: flex;
     flex-direction: row;
@@ -425,7 +429,7 @@ $estilos:(
 
 
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 655px) {
 
 
     * {
@@ -435,38 +439,160 @@ $estilos:(
     }
 
 
-    .contenedor_inicio {
+
+    .main_inicio {
+        width: 650px;
+        height: 1000px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        box-shadow: $sombra-caja;
+        background-image: $ColorPrimario;
+
+        .contenedor_inicio {
+            width: 650px;
+            height: 850px;
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+
+
+            .texto_inicio {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-evenly;
+                margin: 0px 50px 0px 0px;
+                box-shadow: $sombra-caja;
+                font-size: 20px;
+                width: 570px;
+                height: 530px;
+
+
+                .logo_inicio {
+                    width: 300px;
+                    height: 300px;
+                    filter: contrast(110%) brightness(100%) saturate(180%);
+                    box-shadow: $sombra-caja;
+                    border-radius: 50%;
+
+
+
+
+                }
+
+            }
+
+        }
+    }
+
+
+
+
+
+    .footer_inicio {
+        display: flex;
+        align-items: center;
+        padding-left: 350px;
+        padding-top: 60px;
+    }
+
+    /*Estilos Sobre Noe Moni*/
+
+
+
+
+    .contenedor_fluid_sobre {
+        padding-bottom: 50px;
+
+    }
+
+
+
+    .main_sobre {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-image: $ColorPrimario;
+        box-shadow: $sombra-caja;
+        height: 900px;
+    }
+
+    .contenedor_texto_sobre {
         display: flex;
         flex-direction: column-reverse;
         align-items: center;
-        height: 1000px;
-
+        padding-bottom: 50px;
+        
+    }
+   
+    
+   
+    .text_sobre {
+        background-image: $ColorPrimario;
+        box-shadow: $sombra-caja;
+        font-size: 18px;
+        
+    
     }
 
-    .texto_inicio {
-        box-shadow: $sombra-caja;
-        width: 400px;
+    .foto__sobre {
+        width: 350px;
         height: 350px;
-
-
+        
+        
     }
 
-    .main_inicio {
-        display: flex;
-        flex-direction: column-reverse;
-        height: 1100px;
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-        background-image: radial-gradient(#d92858 0.5px, transparent 0.5px), radial-gradient(#d92858 0.5px, #e5e5f7 0.5px);
-    }
-
-
-
-
-
-    .logo {
-        filter: contrast(110%) brightness(100%) saturate(180%);
-        box-shadow: $sombra-caja;
+    .img_redonda {
+        width: 350px;
+        height: 350px;
         border-radius: 50%;
+        border: solid 0.5px white;
+        filter: brightness(100%) contrast(100%) saturate(150%);
+        box-shadow: $sombra-caja;
+        
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .footer_sobre {
+    
+        display: flex;
+        align-items: center;
+    }
+        
+        
+
+        
+    
+
+
+
+
+
+    /*Estilos curs_reg*/
+
+    .header_curs_reg {
+        height: 106px;
+    }
+
+    .encabezado_curs_reg {
+
+        font-style: oblique;
+        color: #d92858;
+        background-image: radial-gradient(#d92858 0.5px, transparent 0.5px), radial-gradient(#d92858 0.5px, #e5e5f7 0.5px);
+        height: 80px;
     }
 
     .curs_reg {
@@ -475,7 +601,7 @@ $estilos:(
     }
 
     .main_cursos {
-        padding-top: 50px;
+        padding-top: 0px;
     }
 
     .curso_kids {
@@ -507,5 +633,18 @@ $estilos:(
 
     }
 
+    /*Estilos contacto*/
+
+    .main_contactos {
+        height: 1100px;
+
+        .contenedor_form {
+            padding-top: 250px;
+        }
+    }
+
+    .footer_contactos {
+        padding-top: 25px;
+    }
 
 }

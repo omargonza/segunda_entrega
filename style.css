@@ -37,7 +37,7 @@
   width: 800px;
   height: 250px;
 }
-.main_inicio .contenedor_inicio .texto_inicio .logo {
+.main_inicio .contenedor_inicio .texto_inicio .logo_inicio {
   filter: contrast(110%) brightness(100%) saturate(180%);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
   border-radius: 50%;
@@ -316,37 +316,110 @@
   align-items: center;
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 655px) {
   * {
     margin: 0;
     padding: 0;
   }
 
-  .contenedor_inicio {
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-    height: 1000px;
-  }
-
-  .texto_inicio {
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-    width: 400px;
-    height: 350px;
-  }
-
   .main_inicio {
+    width: 650px;
+    height: 1000px;
     display: flex;
-    flex-direction: column-reverse;
-    height: 1100px;
+    flex-direction: row;
+    align-items: center;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
     background-image: radial-gradient(#d92858 0.5px, transparent 0.5px), radial-gradient(#d92858 0.5px, #e5e5f7 0.5px);
   }
-
-  .logo {
+  .main_inicio .contenedor_inicio {
+    width: 650px;
+    height: 850px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .main_inicio .contenedor_inicio .texto_inicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0px 50px 0px 0px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    font-size: 20px;
+    width: 570px;
+    height: 530px;
+  }
+  .main_inicio .contenedor_inicio .texto_inicio .logo_inicio {
+    width: 300px;
+    height: 300px;
     filter: contrast(110%) brightness(100%) saturate(180%);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
     border-radius: 50%;
+  }
+
+  .footer_inicio {
+    display: flex;
+    align-items: center;
+    padding-left: 350px;
+    padding-top: 60px;
+  }
+
+  /*Estilos Sobre Noe Moni*/
+  .contenedor_fluid_sobre {
+    padding-bottom: 50px;
+  }
+
+  .main_sobre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: radial-gradient(#d92858 0.5px, transparent 0.5px), radial-gradient(#d92858 0.5px, #e5e5f7 0.5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    height: 900px;
+  }
+
+  .contenedor_texto_sobre {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    padding-bottom: 50px;
+  }
+
+  .text_sobre {
+    background-image: radial-gradient(#d92858 0.5px, transparent 0.5px), radial-gradient(#d92858 0.5px, #e5e5f7 0.5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    font-size: 18px;
+  }
+
+  .foto__sobre {
+    width: 350px;
+    height: 350px;
+  }
+
+  .img_redonda {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    border: solid 0.5px white;
+    filter: brightness(100%) contrast(100%) saturate(150%);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  }
+
+  .footer_sobre {
+    display: flex;
+    align-items: center;
+  }
+
+  /*Estilos curs_reg*/
+  .header_curs_reg {
+    height: 106px;
+  }
+
+  .encabezado_curs_reg {
+    font-style: oblique;
+    color: #d92858;
+    background-image: radial-gradient(#d92858 0.5px, transparent 0.5px), radial-gradient(#d92858 0.5px, #e5e5f7 0.5px);
+    height: 80px;
   }
 
   .curs_reg {
@@ -354,7 +427,7 @@
   }
 
   .main_cursos {
-    padding-top: 50px;
+    padding-top: 0px;
   }
 
   .curso_kids {
@@ -375,5 +448,17 @@
   .curso_adults {
     width: 400px;
     background-image: radial-gradient(#d92858 0.5px, transparent 0.5px), radial-gradient(#d92858 0.5px, #e5e5f7 0.5px);
+  }
+
+  /*Estilos contacto*/
+  .main_contactos {
+    height: 1100px;
+  }
+  .main_contactos .contenedor_form {
+    padding-top: 250px;
+  }
+
+  .footer_contactos {
+    padding-top: 25px;
   }
 }/*# sourceMappingURL=style.css.map */
