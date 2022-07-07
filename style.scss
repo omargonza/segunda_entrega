@@ -28,12 +28,9 @@ $estilos: (
 
 .encabezado {
     @include encabezado;
+    padding: 5px;
 }
 
-.contenedor_fluid_inicio {
-    padding-bottom: 50px;
-
-}
 
 
 .main_inicio {
@@ -43,10 +40,12 @@ $estilos: (
     box-shadow: $sombra-caja;
     background-image: $ColorPrimario;
 
+
     .contenedor_inicio {
         display: flex;
         flex-direction: row;
         align-items: center;
+        padding-left: 15px;
 
 
         .texto_inicio {
@@ -60,7 +59,7 @@ $estilos: (
             height: 250px;
 
 
-            .logo_inicio {
+            .logo_inicio{
                 filter: contrast(110%) brightness(100%) saturate(180%);
                 box-shadow: $sombra-caja;
                 border-radius: 50%;
@@ -107,9 +106,9 @@ $estilos: (
     .contenedor_texto_sobre {
         display: flex;
         align-items: center;
-
+        padding-left: 50px;
         padding-bottom: 50px;
-        gap: 250px;
+        gap: 200px;
 
         .text_sobre {
             background-image: $ColorPrimario;
@@ -429,7 +428,7 @@ $estilos: (
 
 
 
-@media screen and (max-width: 655px) {
+@media screen and (max-width: 750px) {
 
 
     * {
@@ -440,62 +439,7 @@ $estilos: (
 
 
 
-    .main_inicio {
-        width: 650px;
-        height: 1000px;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        box-shadow: $sombra-caja;
-        background-image: $ColorPrimario;
 
-        .contenedor_inicio {
-            width: 650px;
-            height: 850px;
-            display: flex;
-            flex-direction: column-reverse;
-            align-items: center;
-
-
-            .texto_inicio {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: space-evenly;
-                margin: 0px 50px 0px 0px;
-                box-shadow: $sombra-caja;
-                font-size: 20px;
-                width: 570px;
-                height: 530px;
-
-
-                .logo_inicio {
-                    width: 300px;
-                    height: 300px;
-                    filter: contrast(110%) brightness(100%) saturate(180%);
-                    box-shadow: $sombra-caja;
-                    border-radius: 50%;
-
-
-
-
-                }
-
-            }
-
-        }
-    }
-
-
-
-
-
-    .footer_inicio {
-        display: flex;
-        align-items: center;
-        padding-left: 350px;
-        padding-top: 60px;
-    }
 
     /*Estilos Sobre Noe Moni*/
 

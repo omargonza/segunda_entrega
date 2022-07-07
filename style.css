@@ -9,10 +9,7 @@
   color: #d92858;
   background-image: radial-gradient(#d92858 0.5px, transparent 0.5px), radial-gradient(#d92858 0.5px, #e5e5f7 0.5px);
   height: 80px;
-}
-
-.contenedor_fluid_inicio {
-  padding-bottom: 50px;
+  padding: 5px;
 }
 
 .main_inicio {
@@ -26,6 +23,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  padding-left: 15px;
 }
 .main_inicio .contenedor_inicio .texto_inicio {
   display: flex;
@@ -65,8 +63,9 @@
 .main_sobre .contenedor_texto_sobre {
   display: flex;
   align-items: center;
+  padding-left: 50px;
   padding-bottom: 50px;
-  gap: 250px;
+  gap: 200px;
 }
 .main_sobre .contenedor_texto_sobre .text_sobre {
   background-image: radial-gradient(#d92858 0.5px, transparent 0.5px), radial-gradient(#d92858 0.5px, #e5e5f7 0.5px);
@@ -316,52 +315,10 @@
   align-items: center;
 }
 
-@media screen and (max-width: 655px) {
+@media screen and (max-width: 750px) {
   * {
     margin: 0;
     padding: 0;
-  }
-
-  .main_inicio {
-    width: 650px;
-    height: 1000px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-    background-image: radial-gradient(#d92858 0.5px, transparent 0.5px), radial-gradient(#d92858 0.5px, #e5e5f7 0.5px);
-  }
-  .main_inicio .contenedor_inicio {
-    width: 650px;
-    height: 850px;
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-  }
-  .main_inicio .contenedor_inicio .texto_inicio {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    margin: 0px 50px 0px 0px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-    font-size: 20px;
-    width: 570px;
-    height: 530px;
-  }
-  .main_inicio .contenedor_inicio .texto_inicio .logo_inicio {
-    width: 300px;
-    height: 300px;
-    filter: contrast(110%) brightness(100%) saturate(180%);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-    border-radius: 50%;
-  }
-
-  .footer_inicio {
-    display: flex;
-    align-items: center;
-    padding-left: 350px;
-    padding-top: 60px;
   }
 
   /*Estilos Sobre Noe Moni*/
