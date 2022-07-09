@@ -59,17 +59,22 @@ $estilos: (
             height: 250px;
 
 
-            .logo_inicio{
-                filter: contrast(110%) brightness(100%) saturate(180%);
-                box-shadow: $sombra-caja;
-                border-radius: 50%;
-            }
 
         }
 
     }
 }
 
+
+
+img.logo {
+
+
+    filter: contrast(110%) brightness(100%) saturate(180%);
+    box-shadow: $sombra-caja;
+    border-radius: 50%;
+
+}
 
 
 
@@ -106,9 +111,10 @@ $estilos: (
     .contenedor_texto_sobre {
         display: flex;
         align-items: center;
-        padding-left: 50px;
+        justify-content: space-between;
+        padding-left: 30px;
         padding-bottom: 50px;
-        gap: 200px;
+        gap: 150px;
 
         .text_sobre {
             background-image: $ColorPrimario;
@@ -119,14 +125,8 @@ $estilos: (
                 width: 600px;
                 height: 400px;
 
-                .img_redonda {
-                    width: 500px;
-                    height: 350px;
-                    border-radius: 50%;
-                    border: solid 0.5px white;
-                    filter: brightness(100%) contrast(100%) saturate(150%);
-                    box-shadow: $sombra-caja;
-                }
+
+
 
 
             }
@@ -139,7 +139,18 @@ $estilos: (
 
 }
 
+.titulo_sobre {
+    padding-left: 50px;
+}
 
+.img_redonda {
+    width: 400px;
+    height: 485px;
+    border-radius: 50%;
+    border: solid 0.5px white;
+    filter: brightness(100%) contrast(100%) saturate(150%);
+    box-shadow: $sombra-caja;
+}
 
 .footer_sobre {
     display: flex;
@@ -437,6 +448,81 @@ $estilos: (
 
     }
 
+    .body_inicio {
+        width: 750px;
+        height: 1200px;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 15% 10% 60% 15%;
+        row-gap: 10px;
+    }
+
+    .header_inicio {
+        grid-column: 1/1;
+        grid-row: 1/4;
+    }
+
+    .encabezado {
+        grid-column: 1/1;
+        grid-row: 3/1;
+    }
+
+    .main_inicio {
+        grid-column: 1/1;
+        grid-row: 4/1;
+    }
+
+    .footer_inicio {
+        grid-column: 1/1;
+        grid-row: 5/1;
+    }
+
+
+    .main_inicio {
+        display: flex;
+        flex-direction: column-reverse;
+        height: 1100px;
+        box-shadow: $sombra-caja;
+        background-image: $ColorPrimario;
+
+
+        .contenedor_inicio {
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+            padding-left: 15px;
+
+
+            .texto_inicio {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                margin: 0px 50px 0px 0px;
+                box-shadow: $sombra-caja;
+                font-size: 18px;
+                width: 450px;
+                height: 350px;
+                padding-left: 50px;
+                padding-top: 20px;
+
+
+            }
+
+        }
+
+    }
+
+
+    img.logo {
+
+        width: 465px;
+        height: 465px;
+        filter: contrast(110%) brightness(100%) saturate(180%);
+        box-shadow: $sombra-caja;
+        border-radius: 50%;
+
+    }
 
 
 
@@ -467,24 +553,24 @@ $estilos: (
         flex-direction: column-reverse;
         align-items: center;
         padding-bottom: 50px;
-        
+
     }
-   
-    
-   
+
+
+
     .text_sobre {
         background-image: $ColorPrimario;
         box-shadow: $sombra-caja;
         font-size: 18px;
-        
-    
+
+
     }
 
     .foto__sobre {
         width: 350px;
         height: 350px;
-        
-        
+
+
     }
 
     .img_redonda {
@@ -494,32 +580,22 @@ $estilos: (
         border: solid 0.5px white;
         filter: brightness(100%) contrast(100%) saturate(150%);
         box-shadow: $sombra-caja;
-        
+
     }
-
-
-
-
-
-
-
-
-
-
 
 
 
 
     .footer_sobre {
-    
+
         display: flex;
         align-items: center;
     }
-        
-        
 
-        
-    
+
+
+
+
 
 
 
@@ -590,5 +666,30 @@ $estilos: (
     .footer_contactos {
         padding-top: 25px;
     }
+
+
+
+    /*Estilos Galeria*/
+    .encabezado_galer {
+       
+        font-style: oblique;
+        color: #d92858;
+        background-image: radial-gradient(#d92858 0.5px, transparent 0.5px), radial-gradient(#d92858 0.5px, #e5e5f7 0.5px);
+
+        .color_galer {
+          
+            background-image: radial-gradient(#d92858 0.5px, transparent 0.5px), radial-gradient(#d92858 0.5px, #e5e5f7 0.5px);
+
+           
+        }
+    }
+
+    .footer_galeria {
+        padding-top: 300px;
+    }
+
+
+
+
 
 }
